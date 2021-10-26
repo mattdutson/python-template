@@ -1,5 +1,7 @@
 ## Code Style
 
-Unless otherwise specified, follow the [PEP8](https://www.python.org/dev/peps/pep-0008) conventions.
-
-Use a line limit of 99 characters.
+Format all code using the [Black formatter](https://black.readthedocs.io/en/stable/). Use a line
+limit of 99 characters. To format a file, use the command:
+```
+black <FILE> --line-length 99
+```
