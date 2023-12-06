@@ -20,7 +20,7 @@ conda create --name <env_name> --file spec_file.txt
 ```
 To generate a new `spec_file.txt` based on the current environment, run
 ```
-conda list --exlicit > spec_file.txt
+conda list --explicit > spec_file.txt
 ```
 
 ## Code Style
