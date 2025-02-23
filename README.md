@@ -14,13 +14,13 @@ To update the environment after modifying `environment.yml`, run the following (
 conda env update --file environment.yml --prune
 ```
 
-The file `spec_file.txt` contains more precise package versions and can be used to exactly reproduce the original development environment. It can only be installed on 64-bit Linux. To create an environment based `spec_file.txt`, run:
+The file `environment_precise.yml` contains more exact package versions and can be used to reproduce the original development environment. To create an environment based on `environment_precise.yml`, run:
 ```
-conda create --name <env_name> --file spec_file.txt
+conda env create --file environment_precise.yml
 ```
-To generate a new `spec_file.txt` based on the current environment, run
+To generate a new `environment_precise.yml` based on the current environment, run
 ```
-conda list --explicit > spec_file.txt
+conda env export > environment_precise.yml
 ```
 
 ## Code Style
